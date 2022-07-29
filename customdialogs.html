@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Custom Buttons</title>
+        <script type="module">
+            import * as custom_func from './javascript/customdialog.js';
+            document.addEventListener('DOMContentLoaded', () => {
+                custom_func.alert_custom();
+                custom_func.confirm_custom();
+                custom_func.prompt_custom();
+                custom_func.safe_prompt_custom();
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Alert Dialog -->
+        <dialog id="alert_Dialog">
+            <p>Alert pressed!</p>
+            <form method="dialog">
+              <button>OK</button> <!-- Button to close Alert -->
+            </form>
+          </dialog>
+    
+        <!-- Confirm Dialog -->
+        <dialog id="confirm_Dialog">
+            <p>Would you like to confirm?</p>
+            <form method="dialog">
+                <button id="cancelled_click">Cancel</button> <!-- Cancel Button -->
+                <button id="confirmed_click">Ok</button> <!-- Confirm Button -->
+            </form>
+        </dialog>
+    
+        <!-- Prompt Dialog -->
+        <dialog id="prompt_Dialog">
+            <p>What is your name?</p>
+            <form method="dialog">
+                <input type="text" id="prompt_text" name="name_prompt_text">
+                <button id="p_cancelled_click">Cancel</button> <!-- Cancel Button -->
+                <button id="p_confirmed_click">Ok</button> <!-- Confirm Button -->
+            </form>
+        </dialog>
+    
+        <!-- Prompt Dialog -->
+        <dialog id="s_prompt_Dialog">
+            <p>What is your name?</p>
+            <form method="dialog">
+                <input type="text" id="s_prompt_text" name="name_prompt_text">
+                <button id="sp_cancelled_click">Cancel</button> <!-- Cancel Button -->
+                <button id="sp_confirmed_click">Ok</button> <!-- Confirm Button -->
+            </form>
+        </dialog>
+    
+        <!-- Alert, Confirm, Prompt, and Safe Prompt buttons -->
+        <button id="alert_Press">Alert</button> 
+        <button id="confirm_Press">Confirm</button>
+        <button id="prompt_Press">Prompt</button>
+        <button id="safeprompt_Press">Safer Prompt</button>
+    
+        <!-- innertext to be replaced with javascript depending on button choice -->
+        <p id="result"></p>
+    </body>
+</html>

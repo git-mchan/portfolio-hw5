@@ -1,0 +1,148 @@
+
+main {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+  }
+ 
+
+/* Contact me*/
+section { 
+    grid-area: 1 / 1 / 2 / 2; 
+    text-align: center;
+}
+section > h1{
+    font-size: 3.8vw;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+section > strong {
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-bottom: 4vh;
+}
+/* alt-contact*/
+div { 
+    grid-area: 2 / 1 / 3 / 2; 
+    align-self: center;
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+    background-color: gray;
+    width: 70%;
+    margin-left: 5vw;
+    line-height: 2;
+    font-size: 1vw;
+    height:auto;
+}
+div > ol {
+    margin-left: 2.5vw;
+    margin-right: 4.5vw;
+}
+/* message field form */
+ fieldset { 
+    grid-area: 1 / 2 / 3 / 3; 
+    margin-top: 13vh;
+    border-style:solid;
+    border-color: black;
+    background-color: gray;
+    margin-right: 16px;
+    margin-left: 12px;
+    border-radius: 3px;
+    
+}
+
+input[type=text], textarea {
+    width: 95%; 
+    padding: 1vw; 
+    border: 3px solid gray;
+    border-radius: 2px;
+    box-sizing: border-box; 
+    margin-top: 1vh;
+    margin-bottom: 2vh; 
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
+    resize: vertical;
+  }
+
+  button[type=submit] {
+    background-color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    color:black;
+    
+  }
+  button[type=submit]:hover {
+    background-color:skyblue;
+    
+  }
+
+  @media(max-width:940px) and (min-width:481px) {
+    div { 
+        
+        padding-left: 3vw;
+        padding-right:5vw;
+        padding-bottom: 2vh;
+        margin-left: 4vw;
+        line-height: 2;
+        font-size: 2.5vw;
+    }
+    section > h1{
+        font-size: 6.8vw;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    
+    section > strong {
+        font-size: 2.8vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        padding-bottom: 4vh;
+    }
+    div > ol > li {
+        margin-left: 1vw;
+        font-size: 2vw;
+    }
+   
+  }
+
+  @media(max-width:480px){
+    main {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+      }
+      section,fieldset { 
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+      div { 
+        grid-area: 2 / 1 / 3 / 2; 
+    }
+    section > h1 {
+        font-size:10vw;
+    }
+    section > strong {
+
+        font-size: 5vw;
+        margin-bottom: 15vh;
+    }
+    fieldset{
+        margin-top: 23vh;
+    }
+    div { 
+       font-size: 5vw;
+       width:90%;
+    }
+    div > ol > li {
+        margin-left: 5vw;
+        font-size: 4.5vw;
+    }
+  }
+  
+ 
+
+ 
+  

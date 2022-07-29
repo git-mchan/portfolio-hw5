@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Matthew's Contact Page</title>
+        <link rel="icon" href="/assets/icons/message.png">
+        <link rel="stylesheet" href="style/navbarstyle.css">
+        <link rel="stylesheet" href="style/contactstyle.css">
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="fun.html">Random</a></li>
+                <li><a href="styledcrud.html">CRUD</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h1>Contact Me</h1>
+            
+                <strong>
+                    Please fill out the form to contact me and I will gladly respond within a timely matter.
+                </strong>
+            </section>
+            
+            <div>
+                <strong><br><i>Or</i> contact me through:</strong>
+                    <!--begin list of alt contacts-->
+                    <ol>
+                        <!--css for span later-->
+                        <li><span>LinkedIn</span><br>https://www.linkedin.com/in/matthew-chanthirat/</li> <!--maybe make link clickable later-->
+                        <li><span>Email</span><br>chanthiratm@gmail.com</li>
+                    </ol>
+            </div>
+            <!--input form to contact me-->
+            <fieldset>
+                <legend>Send your instant message through this form here!</legend>
+                <form method="post">
+                    <label for="fstname">First Name</label>
+                    <input type="text" name="fstname" id="fstname" required>
+        
+                    <label for="lstname">Last Name</label>
+                    <input type="text" name="lstname" id="lstname" required>
+        
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required>
+        
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </fieldset>
+        </main>
+        
+    </body>
+</html>

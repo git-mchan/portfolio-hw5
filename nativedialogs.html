@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Buttons</title>
+        <script type="text/javascript" src="/DOMPurify-main/dist/purify.min.js"></script>
+        
+        </head>
+        <body>
+            <!-- buttons for native browser -->
+            <button onclick='alerted()' type="button">Alert</button>
+            <button onclick='confirmation()'>Confirm</button>
+            <button onclick='prompted()' type="button">Prompt</button>
+            <button onclick='safety()' type="button">Safer Prompt</button>
+            <output id='show' style="display:none;"></output>
+            <!--<b onmouseover="alert('pwned')">roll me</b>-->
+        
+            <script>
+                
+                /* Alert function */
+                function alerted(){
+                  alert('Alert Pressed!');
+                }
+        
+                /* Confirm function */
+                function confirmation() {
+                  let reveal = document.getElementById('show'); // get output id
+                  // check if confirm button is pressed
+                  if (confirm('Would you like to confirm?') == true) {
+                    reveal.innerHTML = "The value returned by the confirm method is : true" // message is true if clicked
+                    reveal.style.display = "block"; // style is shown
+                    reveal = null;
+                  }
+                  // gives false value if not confirmed
+                  else {
+                    reveal.innerHTML = "The value returned by the confirm method is : false"
+                    reveal.style.display = "block";
+                    reveal=null;
+                  }
+                }
+        
+                /* prompt function */
+                function prompted() {
+                    let reveal = document.getElementById('show'); // get output id
+                    let message = prompt('What is your name?',); // prompt message
+                    // if input is cancelled, say user didn't enter anything
+                    if(message == null){
+                        reveal.innerHTML = "User didn't enter anything";
+                        reveal.style.display="block";
+                        reveal = null;
+                        message=null;
+                    }
+                    // if input was not cancelled, give back user input
+                    else if(message!=null){
+                        reveal.innerHTML = 'Prompt result : ' + message;
+                        reveal.style.display="block";
+                        reveal = null;
+                        message=null;
+                    }
+                    
+                }
+        
+                /* safe prompt function */
+                function safety() {
+                    let reveal = document.getElementById('show'); // get output id
+                    let messages = prompt('What is your name?',); // prompt message
+                    // if input is cancelled, say user didn't enter anything
+                    if(messages == null){
+                        reveal.innerHTML = "User didn't enter anything";
+                        reveal.style.display="block";
+                        reveal = null;
+                        messages=null;
+                    }
+                    // if input was not cancelled, give back user input
+                    else if(messages!=null){
+                        reveal.innerHTML = "Prompt result : " + DOMPurify.sanitize(messages); // sanitize input 
+                        reveal.style.display="block";
+                        reveal = null;
+                        messages=null;
+                    }
+                }
+            </script>
+        </body>
+</html>

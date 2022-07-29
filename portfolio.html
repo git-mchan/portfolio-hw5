@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Matthew's Portfolio</title>
+        <link rel="icon" href="/assets/icons/portfolio.png">
+        <link rel="stylesheet" href="/style/navbarstyle.css">
+        <link rel="stylesheet" href="/style/portfolio-desktop.css" media="(min-width:481px)">
+        <link rel="stylesheet" href="/style/portfolio-mobile.css"  media="(max-width:480px)">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'GA_MEASUREMENT_ID');
+        </script>
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="fun.html">Random</a></li>
+                <li><a href="styledcrud.html">CRUD</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Portfolio</h1>
+            <h2>Resume</h2>
+            
+            <!-- <img src="/assets/images/blankresumeholder.jpg" alt="resume of matthew"> -->
+            <section>
+                <h3>Education</h3>
+                <p>2018-present<br>B.S. Computer Science<br>University Of California San Diego</p>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Self Motivation</li>
+                    <li>Calmness</li>
+                </ul>
+                <h3>Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>C/C++</li>
+                    <li>Haskell</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                </ul>
+                <h3>Work Experience</h3>
+                <p>2021 July-December<br><b>San Diego Supercomputer Center Intern</b> - Front End Developer and Back End Engineer</p>
+                <ul>
+                    <li>During the Summer months, worked in a team to create a software product on the front end designer side using an idea we came up with.</li>
+                    <li>During the Fall months, worked back end on an SDSC tool already created.</li>
+                </ul>
+            </section>
+            <h2>Works</h2>
+            <section>
+                <h3><span>Together with teams:</span></h3> <!--css span later-->
+                <ol>
+                    <li>
+                        An app (on mobile) that allowed housemates to keep each other accountable. Done by keeping track of 
+                        each other's responsibilties. Making it fun by giving a scoreboard to everyone in the 
+                        household so they can get points for fun everytime they finished a chore. 
+                    </li>
+                    <li>
+                        Website that held food recipes both personal and found on the web. The ability to save 
+                        and edit personal recipes or get new ones found on the web that inegrated with the website.
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h3>(1) Screenshots of App</h3>
+                <img src="/assets/images/app1.jpg" alt="app screenshot of profile page">
+                <img src="/assets/images/app1-1.png" alt="app screenshot of tasks page">
+                <h3>(2) Wireframes For Website </h3>
+                <img src="/assets/images/app2-1.png" alt="wireframe for homepage recipes">
+                <img src="/assets/images/app2-2.png" alt="wireframe for sample recipe of recipes">
+            </section>
+        </main>
+        
+    </body>
+</html>

@@ -1,0 +1,16 @@
+h1, header > h2:nth-of-type(1){
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+}
+body {
+    align-items: center;
+}
+pre {
+    background-color: yellow;
+    width: fit-content;
+}
+iframe{
+    width: fit-content;
+    align-items: center;
+}

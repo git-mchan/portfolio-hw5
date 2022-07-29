@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Top of page name */
+body > main > header > h1 {
+    text-align: center;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    font-size: 3.5vw;
+}
+/* titles of the blogs */
+#header_title {
+    padding: 4vh 2.5vw;
+    font-size: 2.1vw;
+}
+/* any text on the page */
+p {
+    text-align: center;
+    padding: 2vh 2vw;
+    font-size: larger;
+}
+/* all buttons */
+button {
+    background-color: grey;
+    color: white;
+    padding: 0.5vh 3vw;
+    margin-left: 2.5vw;
+    border-radius: 2.5vw;
+}
+/* hover for any button */
+button:hover {
+    color: red;
+}
+/* create new blog button */
+#blog_create {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: center;
+    width: 95vw;
+}
+/* delete confirmation button */
+#confirm-delete {
+    position: sticky;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    padding: 2vw;
+    bottom: 32vh;
+}
+/* container for dialogs */
+dialog > section {
+    max-width: 80vw;
+    background-color: tan;
+    border-radius: 1vw;
+}
+/* dialogs holding the fieldset */
+dialog {
+    position: sticky;
+    margin-left: 12vw;
+    bottom: 32vh;
+    padding: 2vh 2vh;
+    background-color: lightgray;
+    border-radius: 1.5vw;
+}/* edit/add blog buttons inside the dialog containers */
+#confirmed_edit, #confirmed_insert {
+    width: 6vw;
+    background-color: gray;
+    color: white;
+    border-radius: 2.5vw;
+} /* edit/add blog buttons hover */
+#confirmed_edit:hover, #confirmed_insert:hover {
+    color:red;
+}
+/* delete dialog cancel button */
+#cancelled_click {
+width:10vw;
+}
+/* delete dialog confirm ok button */
+#confirmed_click {
+width: 10vw;
+margin-top: 1vh;
+}
+/* edit blog button */
+blog-edit-value > button {
+    width: 12vw;
+ 
+
+}
+/* delete blog button  */
+blog-delete-value > button {
+    width: 12vw;
+   
+
+}

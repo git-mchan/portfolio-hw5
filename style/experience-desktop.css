@@ -1,0 +1,48 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4vw;
+    margin: 4vh auto;
+}
+section {
+    line-height: 2;
+}
+section h2 {
+    font-size: 2.5vw;
+    margin-left: 6px;
+}
+section > p {
+    font-size: 1.5vw;
+    line-height: 2;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+@media(max-width:480px) {
+    section > p {
+        font-size: 4.5vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 6vw;
+    }
+    section h2 {
+        font-size: 5.5vw;
+        text-align: center;
+    }
+}
+@media(min-width:481px) and (max-width:940px) {
+    section > p {
+        font-size: 2.5vw;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    section h2 {
+        font-size: 3.5vw;
+    }
+}
