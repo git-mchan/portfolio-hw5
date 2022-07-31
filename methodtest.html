@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Request Methods</title>
+    <link rel="stylesheet" href="/style/navbarstyle.css">
+    <script type="module">
+        import * as request from './javascript/request.js';
+        window.get_button = request.get_button;
+        window.post_button = request.post_button;
+        window.put_button = request.put_button;
+        window.delete_button = request.delete_button;
+    
+        document.addEventListener("DOMContentLoaded", (ev) => {
+            ev.preventDefault();
+        });
+    </script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="fun.html">Random</a></li>
+            <li><a href="styledcrud.html">CRUD</a></li>
+            <li><a class="active" href="methodtest.html">HW5-PT1</a></li>
+            <li><a href="webcomponent.html">HW5-PT2</a></li>
+        </ul>
+    </nav>
+    <h1>Fetch Me Their Souls</h1>
+    <form id="request" action="" method="">
+        <fieldset>
+            <label for="id">Article ID</label>
+            <input for="text" name="id" value="">
+            <label for="article_name">Article Name</label>
+            <input type="text" name="article_name" value="">
+            <label for="article_body">Article Body</label>
+            <textarea name="article_body"></textarea>
+            <label for="date"></label> <!-- Edit text to say date if date is displayed below via javascript -->
+            <input type="hidden" name="date" value="hi">
+        </fieldset>
+    </form>
+        <section>
+            <button type="button" onclick="post_button()">postBtn</button>
+            <button type="button" onclick="get_button()">getBtn</button>
+            <button type="button" onclick="put_button()">putBtn</button>
+            <button type="button" onclick="delete_button()">deleteBtn</button>
+        </section>
+        <h2>Fetch Request Output</h2>
+        <output id="response"><pre></pre></output>
+    
+</body>
